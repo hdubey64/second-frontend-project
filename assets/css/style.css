@@ -1,0 +1,14 @@
+:root {
+   --orengeColor: #f4623a;
+   --smallFontColor: #8b9298;
+   --downloadColor: #212529;
+   --footerColor: #f8f9fa;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: 0;
+}
+body {
+   background-color: var(--smallFontColor);
+}
