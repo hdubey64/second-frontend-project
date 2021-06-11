@@ -1,6 +1,6 @@
 :root {
    --orengeColor: #f4623a;
-   --smallFontColor: #8b9298;
+   --smallFontColor: #c7cfcd;
    --downloadColor: #212529;
    --footerColor: #f8f9fa;
 }
@@ -8,4 +8,76 @@
    margin: 0;
    padding: 0;
    box-sizing: 0;
+}
+.nav-item {
+   font-weight: bold;
+   color: var(--smallFontColor);
+}
+.heroSection {
+   background-image: url(/assets/images/Banner.png);
+   height: 95vh;
+}
+.banner {
+   height: 95vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+.banner h1 {
+   width: 750px;
+   font-size: 4rem;
+   color: white;
+}
+.banner p {
+   width: 750px;
+   font-size: 1.4rem;
+   color: var(--smallFontColor);
+}
+.btn {
+   margin: 25px auto;
+   border-radius: 100px;
+   padding: 15px 25px;
+   background-color: var(--orengeColor);
+   color: white;
+   border: none;
+   font-weight: bold;
+}
+.box {
+   margin: 25px auto;
+   height: 4px;
+   width: 52px;
+
+   background-color: var(--orengeColor);
+}
+.startSection {
+   background-color: var(--orengeColor);
+   height: 70vh;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.box2 {
+   margin: 25px auto;
+   height: 4px;
+   width: 52px;
+
+   background-color: white;
+}
+.startSection p {
+   width: 700px;
+   font-size: 1.1rem;
+   text-align: center;
+   margin: 0 auto;
+}
+.button2 {
+   margin: 25px auto;
+   border-radius: 100px;
+   padding: 15px 25px;
+   background-color: white;
+   color: black;
+   border: none;
+   font-weight: bold;
 }
