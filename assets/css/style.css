@@ -14,6 +14,12 @@
    font-weight: bold;
    color: var(--smallFontColor);
 }
+header {
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
 .heroSection {
    background-image: url(/assets/images/Banner.png);
    height: 95vh;
@@ -136,4 +142,64 @@
    color: black;
    border: none;
    font-weight: bold;
+}
+.formSection {
+   height: 140vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.formSection p {
+   width: 500px;
+   font-size: 1.1rem;
+   text-align: center;
+   margin: 0 auto;
+   color: var(--sarvicesfontcolor);
+   font-weight: 500;
+}
+::placeholder {
+   /* Chrome, Firefox, Opera, Safari 10.1+ */
+   color: black !important;
+   opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+   /* Internet Explorer 10-11 */
+   color: black !important;
+}
+
+::-ms-input-placeholder {
+   /* Microsoft Edge */
+   color: black !important;
+}
+input {
+   padding: 25px 10px !important;
+}
+textarea {
+   padding: 15px 10px !important;
+}
+.form button {
+   border-radius: 100px;
+   background-color: var(--orengeColor) !important;
+   color: white;
+   border: none;
+   padding: 20px 0;
+}
+.formSection h6 {
+   color: var(--sarvicesfontcolor);
+}
+footer {
+   height: 15vh;
+   display: flex;
+
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: var(--footerColor);
+   color: var(--sarvicesfontcolor);
+}
+footer p {
+   margin: 0;
 }
