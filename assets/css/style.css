@@ -1,18 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 :root {
    --orengeColor: #f4623a;
    --smallFontColor: #c7cfcd;
    --downloadColor: #212529;
    --footerColor: #f8f9fa;
    --sarvicesfontcolor: #6c757d;
+   --secondFont: "Merriweather", serif;
 }
 * {
    margin: 0;
    padding: 0;
    box-sizing: 0;
+   scroll-behavior: smooth;
+}
+p {
+   font-family: var(--secondFont);
+   font-size: 16px !important;
 }
 .nav-item {
    font-weight: bold;
    color: var(--smallFontColor);
+   padding: 0 15px;
+}
+.nav-item:hover a {
+   color: var(--orengeColor) !important;
 }
 header {
    position: sticky;
@@ -35,12 +46,12 @@ header {
 }
 .banner h1 {
    width: 750px;
-   font-size: 4rem;
+   font-size: 3.8rem;
    color: white;
 }
 .banner p {
    width: 750px;
-   font-size: 1.4rem;
+   font-size: 1.2rem !important;
    color: var(--smallFontColor);
 }
 .btn {
@@ -91,20 +102,20 @@ header {
    font-weight: bold;
 }
 .sarviceSection {
-   height: 70vh;
+   padding: 100px 0;
    text-align: center;
    display: flex;
    align-items: center;
    justify-content: center;
 }
 .sarviceSection p {
-   width: 200px;
    text-align: center;
    margin: 0 auto;
    font-size: 1.1rem;
    color: var(--sarvicesfontcolor);
    font-weight: 500;
 }
+
 .sarviceSection .row {
    padding: 40px 0;
 }
@@ -209,9 +220,6 @@ footer p {
 }
 
 @media (max-width: 991.98px) {
-   .sarviceSection {
-      height: 100vh;
-   }
    .imgdiv {
       margin-top: 30px;
    }
@@ -241,10 +249,8 @@ footer p {
       font-size: 1.1rem;
       font-weight: 300;
    }
-   .sarviceSection {
-      margin: 70px 0;
-
-      height: 140vh !important;
+   .sarviceSection .row div {
+      margin-top: 20px;
    }
    .sarviceSection h2 {
       padding-bottom: 20px;
