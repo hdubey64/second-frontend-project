@@ -145,7 +145,7 @@ header {
    font-weight: bold;
 }
 .formSection {
-   height: 140vh;
+   padding-top: 50px;
    display: flex;
    flex-direction: column;
    align-items: center;
