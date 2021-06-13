@@ -23,6 +23,7 @@ header {
 .heroSection {
    background-image: url(/assets/images/Banner.png);
    height: 95vh;
+   background-position: center;
 }
 .banner {
    height: 95vh;
@@ -180,6 +181,9 @@ input {
 textarea {
    padding: 15px 10px !important;
 }
+.form {
+   width: 50%;
+}
 .form button {
    border-radius: 100px;
    background-color: var(--orengeColor) !important;
@@ -202,4 +206,78 @@ footer {
 }
 footer p {
    margin: 0;
+}
+
+@media (max-width: 991.98px) {
+   .sarviceSection {
+      height: 100vh;
+   }
+   .imgdiv {
+      margin-top: 30px;
+   }
+   .form {
+      width: 70%;
+   }
+}
+@media (max-width: 767.98px) {
+   .banner {
+      margin: 0;
+   }
+   .heroSection {
+      height: 100vh;
+
+      background-position-x: center;
+   }
+   .banner h1 {
+      font-size: 2.7rem;
+      width: 500px;
+   }
+   .banner p {
+      width: 500px;
+      font-size: 1.2rem;
+   }
+   .startSection p {
+      width: 90%;
+      font-size: 1.1rem;
+      font-weight: 300;
+   }
+   .sarviceSection {
+      margin: 70px 0;
+
+      height: 140vh !important;
+   }
+   .sarviceSection h2 {
+      padding-bottom: 20px;
+   }
+   .box {
+      margin: 20px auto;
+   }
+   .imgdiv {
+      margin-top: 20px;
+   }
+   .form {
+      width: 100%;
+      padding: 0 10px;
+   }
+   .gallerySection img {
+      object-fit: cover;
+      width: 100%;
+   }
+}
+@media (max-width: 575.98px) {
+   .banner h1 {
+      width: 300px;
+      font-size: 2rem !important;
+   }
+   .banner p {
+      width: 300px;
+   }
+   .formSection p {
+      padding: 0 10px;
+      width: 100%;
+   }
+   .form {
+      width: 100%;
+      padding: 0 10px;
+   }
 }
